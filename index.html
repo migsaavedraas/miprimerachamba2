@@ -1,1 +1,48 @@
-HOLA22
+<html>
+    <title>Clase 01</title>
+    <body>
+
+    </body>
+    <script>
+
+        //JSON
+        const exdeAxel = [
+            {
+                "nombre": "Miguela",
+                "edad": 17
+            },
+            {
+                "nombre": "Cristhian",
+                "edad": 23
+            },
+            {
+                "nombre": "Marcial",
+                "edad": 16
+            },
+            {
+                "nombre": "JP",
+                "edad": 18
+            },
+            {
+                "nombre": "Ariam",
+                "edad": 17
+            },
+            {
+                "nombre": "Julieta",
+                "edad": 22
+            }
+        ];  
+        function isLegal(edad, nombre) {
+            if (edad > 18 || edad == 18) {
+                console.log(nombre+" es legal");
+            }
+        }
+        /*for (let i=0; i<edades.length; i++){
+            console.log(edades[i]+1);
+        } */
+        exdeAxel.forEach((e) => {
+            // es legal
+            isLegal(e.edad, e.nombre);            
+        });
+    </script>
+</html>
